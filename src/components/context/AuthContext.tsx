@@ -1,5 +1,4 @@
 import { createContext, useContext, useState, useEffect, ReactNode } from "react";
-// import axios from "axios";
 import auth from '../../firebase/firebase'
 import {
   signInWithEmailAndPassword,
@@ -97,7 +96,7 @@ const UserContext = createContext<AuthContextProps | null>(null);
             data: payload,
           };
 
-          await axios.delete("/api/delete-user", config);
+          await axios.delete(process.env.BACKEND_URL + "/api/delete-user", config);
           await deleteUser(userDelete);
           setUser(null);
         } else {

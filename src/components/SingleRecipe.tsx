@@ -83,7 +83,7 @@ function SingleRecipe(props: PropsInterface) {
       };
 
       // console.log(queryBody)
-      await axios.put("/api/recipe", queryBody);
+      await axios.put(process.env.BACKEND_URL + "/api/recipe", queryBody);
 
       setIsSubmitted(true);
     } catch (error) {
@@ -176,7 +176,7 @@ function SingleRecipe(props: PropsInterface) {
                         )
                       ) {
                         const request = await axios.delete(
-                          `/api/delete-recipe/user/${user.uid}/recipe/${singleRecipe.id}`
+                          process.env.BACKEND_URL + `/api/delete-recipe/user/${user.uid}/recipe/${singleRecipe.id}`
                         );
                         if (request) {
                           navigate("/");

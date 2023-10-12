@@ -32,7 +32,7 @@ const MyRecipes = () => {
   useEffect(() => {
     (async function () {
       const userRecipes = await axios
-        .get(`/api/recipes/${user?.uid}`)
+        .get(process.env.BACKEND_URL + `/api/recipes/${user?.uid}`)
         .then((results) => results.data);
       setMyRecipes(userRecipes);
       return "allGood";

@@ -30,7 +30,7 @@ function PublicRecipes() {
   useEffect(() => {
     (async function () {
       const userRecipes = await axios
-        .get(`/api/public-recipes`)
+        .get(process.env.BACKEND_URL + `/api/public-recipes`)
         .then((results) => results.data);
       setPublicRecipes(userRecipes);
       return "allGood";

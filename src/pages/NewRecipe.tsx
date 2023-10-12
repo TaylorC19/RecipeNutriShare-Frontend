@@ -54,7 +54,7 @@ const NewRecipe = () => {
       };
 
       // console.log(queryBody)
-      await axios.post("/api/recipe", queryBody);
+      await axios.post(process.env.BACKEND_URL + "/api/recipe", queryBody);
 
       setIsSubmitted(true);
     } catch (error) {
