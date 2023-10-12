@@ -1,0 +1,17 @@
+.ingredient-container {
+  display: flex;
+  flex-direction: column;
+  background-color: #d7faff;
+  padding: 20px;
+  margin-left: 10px;
+  border-radius: 10px;
+}
+.column-titles {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.unit-explain-p {
+  margin: 0;
+}

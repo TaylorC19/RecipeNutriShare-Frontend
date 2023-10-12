@@ -1,0 +1,57 @@
+.signin-contents {
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  border-radius: 15px;
+
+  width: 300px;
+  margin: 20px auto;
+  background-color: rgb(131, 255, 255);
+}
+
+.signin-form {
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.flex-item-margins {
+  margin: 5px 0;
+}
+
+.signin-header {
+  margin: 0;
+
+}
+
+.signin-btn {
+  display: inline-block;
+  background: #3498db;
+  background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
+  background-image: -moz-linear-gradient(top, #3498db, #2980b9);
+  background-image: -ms-linear-gradient(top, #3498db, #2980b9);
+  background-image: -o-linear-gradient(top, #3498db, #2980b9);
+  background-image: linear-gradient(to bottom, #3498db, #2980b9);
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.signin-btn:hover {
+  background: #3cb0fd;
+  background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+  text-decoration: none;
+}
+
+.small-margin {
+  margin: 10px 0;
+}

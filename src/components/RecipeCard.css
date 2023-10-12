@@ -1,0 +1,46 @@
+h2 {
+  margin: 0 0 10px 0;
+}
+
+h4 {
+  margin: 0 0 10px 0;
+}
+
+.recipe-card {
+  background-color: #d7faff;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+.info-rows {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 10px;
+}
+
+.nutrition-rows {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 10px;
+  border-bottom: 1px solid rgba(0,0,0,.15);
+}
+
+.grid-item {
+  margin: 0 0 10px 0;
+}
+
+@media screen and (max-width: 500px) {
+  .info-rows {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap:10px;
+  }
+  
+  .nutrition-rows {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap:10px;
+  }
+  
+}

@@ -1,0 +1,22 @@
+.header-div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #209CEE;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.header-div h1 {
+  margin: 0;
+  margin-left: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-decoration: none;
+}
+
+.header-div button {
+  margin-right: 15px;
+  padding: 5px;
+}

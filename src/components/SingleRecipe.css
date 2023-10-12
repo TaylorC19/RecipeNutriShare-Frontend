@@ -1,0 +1,51 @@
+.contents-div {
+  display: flex;
+  flex-direction: column;
+}
+
+.contents-div h2 {
+  margin: 0 0 15px 0;
+}
+
+.nutrition-info {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 5px;
+}
+
+.nutrition-info p {
+  margin: 0 0 10px 0;
+}
+
+.full-recipe {
+  display: flex;
+
+}
+
+.ingredients {
+  margin-right: 25px;
+}
+
+.single-ingredient {
+  margin-bottom: 10px;
+}
+
+.instructions-p {
+  margin: 0 0 5px 0;
+}
+
+.margin-right {
+  margin-right: 15px;
+}
+
+@media screen and (max-width: 500px) {
+  .nutrition-info {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .full-recipe {
+    display: flex;
+    flex-direction: column;
+  }
+}

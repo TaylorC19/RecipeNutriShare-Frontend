@@ -1,0 +1,17 @@
+.one-item {
+  display: flex;
+  margin: 5px 0px;
+  justify-content: space-between;
+}
+
+.name {
+  width: 30%;
+}
+
+.quantity {
+  width: 30%;
+}
+
+.unit {
+  width: 30%;
+}

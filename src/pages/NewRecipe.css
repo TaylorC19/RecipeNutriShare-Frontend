@@ -1,0 +1,19 @@
+.form-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 25px;
+}
+
+.right {
+  float:right;
+  margin-right: 10px;
+}
+
+@media screen and (max-width: 500px) {
+  .form-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    column-gap: 25px;
+  }
+  
+}
