@@ -32,7 +32,7 @@ function PublicRecipes() {
       const userRecipes = await axios
         .get(process.env.BACKEND_URL + `/api/public-recipes`)
         .then((results) => {
-            if(results) {
+            if(Array.isArray(results)) {
                 return results.data;
             } else {
                 console.log("cannot hit backend");
