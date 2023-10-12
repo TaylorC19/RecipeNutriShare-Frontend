@@ -36,6 +36,7 @@ function PublicRecipes() {
                 return results.data;
             } else {
                 console.log("cannot hit backend");
+                console.log(results);
                 return [];
             }
         });
