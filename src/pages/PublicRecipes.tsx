@@ -31,7 +31,14 @@ function PublicRecipes() {
     (async function () {
       const userRecipes = await axios
         .get(process.env.BACKEND_URL + `/api/public-recipes`)
-        .then((results) => results.data);
+        .then((results) => {
+            if(results) {
+                return results.data;
+            } else {
+                console.log("cannot hit backend");
+                return [];
+            }
+        });
       setPublicRecipes(userRecipes);
       return "allGood";
     })();
