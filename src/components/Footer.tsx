@@ -19,7 +19,7 @@ function Footer(props: PropsInterface) {
 }
 
 Footer.defaultProps = {
-  text: "© 2023 Meal Prep Tracker"
+  text: "© 2023 RecipeNutriShare"
 }
 
 export default Footer

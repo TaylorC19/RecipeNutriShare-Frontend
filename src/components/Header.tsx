@@ -37,7 +37,7 @@ const Header: React.FC = () => {
 
   return (
     <nav className="header-div">
-      <h1 className="logo">Meal Prep Life</h1>
+      <h1 className="logo">RecipeNutriShare</h1>
 
       {user ? (
         <div className="navigate-items">

@@ -148,7 +148,7 @@ function Home ()  {
         </div>
       </div>
 
-      <Footer text="© 2023 Meal Prep Tracker" />
+      <Footer text="© 2023 RecipeNutriShare" />
     </div>
   );
 };
