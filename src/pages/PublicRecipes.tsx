@@ -4,7 +4,7 @@ import Footer from "../components/Footer";
 import axios from "axios";
 import RecipeCard from "../components/RecipeCard";
 import SingleRecipe from "../components/SingleRecipe";
-import './PublicRecipes.css';
+import "./PublicRecipes.css";
 import { singleRecipeObj } from "../global.t";
 
 function PublicRecipes() {
@@ -29,17 +29,18 @@ function PublicRecipes() {
 
   useEffect(() => {
     (async function () {
-      const userRecipes = await axios
-        .get(process.env.BACKEND_URL + `/api/public-recipes`)
-        .then((results) => {
-            if(Array.isArray(results)) {
-                return results.data;
-            } else {
-                console.log("cannot hit backend");
-                console.log(results);
-                return [];
-            }
-        });
+      const backendURL = process.env.REACT_APP_BACKEND_URL;
+      const requestURL = backendURL + `/api/public-recipes`;
+
+      const userRecipes = await axios.get(requestURL).then((results) => {
+        if (Array.isArray(results.data)) {
+          return results.data;
+        } else {
+          console.log("cannot hit backend");
+          console.log(results);
+          return [];
+        }
+      });
       setPublicRecipes(userRecipes);
       return "allGood";
     })();
@@ -70,7 +71,6 @@ function PublicRecipes() {
             ></SingleRecipe>
           )}
         </div>
-
       </div>
       <Footer></Footer>
     </div>

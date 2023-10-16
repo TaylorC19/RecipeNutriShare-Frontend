@@ -32,8 +32,10 @@ function Home ()  {
   useEffect(()=> {
     const getHighlight = async ()=> {
       const highlight = await axios
-        .get<singleRecipeObj>(process.env.BACKEND_URL + "/api/random-recipe")
-        .then((result)=> result.data);
+        .get<singleRecipeObj>(
+          process.env.REACT_APP_BACKEND_URL + "/api/random-recipe"
+        )
+        .then((result) => result.data);
       setSingleRecipe(highlight);
     };
     getHighlight();

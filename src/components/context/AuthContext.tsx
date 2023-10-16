@@ -96,7 +96,10 @@ const UserContext = createContext<AuthContextProps | null>(null);
             data: payload,
           };
 
-          await axios.delete(process.env.BACKEND_URL + "/api/delete-user", config);
+          await axios.delete(
+            process.env.REACT_APP_BACKEND_URL + "/api/delete-user",
+            config
+          );
           await deleteUser(userDelete);
           setUser(null);
         } else {

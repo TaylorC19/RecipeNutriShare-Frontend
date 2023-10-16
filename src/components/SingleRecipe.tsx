@@ -176,7 +176,8 @@ function SingleRecipe(props: PropsInterface) {
                         )
                       ) {
                         const request = await axios.delete(
-                          process.env.BACKEND_URL + `/api/delete-recipe/user/${user.uid}/recipe/${singleRecipe.id}`
+                          process.env.REACT_APP_BACKEND_URL +
+                            `/api/delete-recipe/user/${user.uid}/recipe/${singleRecipe.id}`
                         );
                         if (request) {
                           navigate("/");

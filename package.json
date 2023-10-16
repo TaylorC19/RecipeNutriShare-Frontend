@@ -42,7 +42,6 @@
       "last 1 safari version"
     ]
   },
-  "proxy": "http://localhost:4000",
   "devDependencies": {
     "@types/react-dom": "^18.2.4",
     "react-router-dom": "^6.16.0",
