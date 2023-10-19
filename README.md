@@ -1,6 +1,6 @@
 <!-- <img src="path to logo" alt="Header" title="Header" width="1200"> -->
 
-[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE) ![GitHub last updated (branch)](https://img.shields.io/github/last-commit/RecipeNutriShare/RecipeNutriShare-Frontend/main) ![GitHub issues](https://img.shields.io/github/issues/RecipeNutriShare/RecipeNutriShare-Frontend) 
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE) ![GitHub issues](https://github.com/TaylorC19/RecipeNutriShare-Frontend/issues) 
 
 
 ## Description
